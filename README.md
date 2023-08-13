@@ -1,6 +1,8 @@
-# qemu-img-binaries
+# qemu-img-binaries (Cloudbase version)
 
 Minimal set of files to run [`qemu-img`](https://qemu.readthedocs.io/en/latest/tools/qemu-img.html) on Windows.
+
+This branch contains an older version published by [Cloudbase](https://cloudbase.it/qemu-img-windows).
 
 
 
@@ -9,7 +11,7 @@ Minimal set of files to run [`qemu-img`](https://qemu.readthedocs.io/en/latest/t
 Simply `git checkout` this repository. All necessary files are included.
 
 ```powershell
-git clone --quiet --depth 1 --single-branch 'https://github.com/fdcastel/qemu-img-binaries'
+git clone --quiet --depth 1 --single-branch --branch 'cloudbase' 'https://github.com/fdcastel/qemu-img-binaries'
 ```
 
 
@@ -20,6 +22,6 @@ This adds the latest version to your `TEMP` folder and add it to `PATH` of curre
 
 ```powershell
 $targetFolder = "$env:temp/qemu-img-binaries"
-git clone --quiet --depth 1 --single-branch 'https://github.com/fdcastel/qemu-img-binaries' $targetFolder
+git clone --quiet --depth 1 --single-branch --branch 'cloudbase' 'https://github.com/fdcastel/qemu-img-binaries' $targetFolder
 $env:Path += ";$targetFolder"
 ```
